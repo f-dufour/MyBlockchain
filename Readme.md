@@ -31,6 +31,7 @@ It is possible to consider running the algorithms on the graphical card using th
 - [ ] Current implementation permits to easily add  a transaction within a block
 - [ ] Current implementation does not suport P2P
 - [ ] Current implementation does not make use of public/private key for participants
+- [ ] The genesis block is never mined. Is that normal?
 
 **Related to the code**:
 
