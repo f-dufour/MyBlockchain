@@ -16,7 +16,7 @@ Dependencies have to be saved within the `code` directory with the sketch.
 
 1. Clone the repository
 1. Make sure the sketch contains the  dependency:`./code/commons-codec-1.11.jar` 
-1. Open the project in processing and run or launch it via the command line `processing-java --run --sketch=Main`
+1. Open the project in processing and run or launch it via the command line `processing-java --run --sketch=MyBlockchain`
 1. The sketch will be drawn on a new window, fullscreen.
 
 # Graphical acceleration
@@ -28,8 +28,9 @@ It is possible to consider running the algorithms on the graphical card using th
 **Related to the blockchain**:
 
 - [ ] Current immplementation does not check for balance of a participant before accepting a transaction
-- [ ] Current implementation does not suport P2P
 - [ ] Current implementation permits to easily add  a transaction within a block
+- [ ] Current implementation does not suport P2P
+- [ ] Current implementation does not make use of public/private key for participants
 
 **Related to the code**:
 
