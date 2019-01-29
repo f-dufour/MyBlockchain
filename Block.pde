@@ -1,5 +1,5 @@
 /**
- * Each block contains transactions. Blocks are chained in a blockchain. 
+ * A block contains transactions. Blocks are chained in a blockchain.
  */
 class Block {
   int index;
@@ -28,7 +28,7 @@ class Block {
   }
 
   /**
-   * Sends the reward to the address if successfully mined the block
+   * Sends the reward to the address if it successfully mined the block
    */
   void mineBlock(int difficulty) {
     String targetHashStart = String.format("%0" + difficulty + "d", 0);

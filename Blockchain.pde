@@ -54,12 +54,14 @@ class Blockchain {
     this.pendingTransactions = new ArrayList<Transaction>(); // Reset pending transactions (TODO: mind garbage collection)
     this.pendingTransactions.add(new Transaction(null, miningRewardAddress, this.miningReward)); // Prepare reward for the miner at the next round
   }
+
   /**
    * Adds a transaction to the pending transactions
    */
-  void createTransaction(Transaction transaction) {
-    this.pendingTransactions.add(transaction);
+  void addPendingTransactions(ArrayList<Transaction> transactions) {
+    this.pendingTransactions.addAll(transactions);
   }
+  
   /**
    * Reads the transactions in the blockchain and returns the balance of a user
    */
@@ -81,10 +83,9 @@ class Blockchain {
   }
 
   /**
-   * Verifies integrity of the chain based on the hash values.
+   * Verifies the integrity of the chain based on the hash values.
    */
   boolean isChainValid() {
-
     for (int i = 1; i < this.chain.size(); i++) { // Skip the first
       Block currentBlock = chain.get(i);
       Block previousBlock = chain.get(i - 1);

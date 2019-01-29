@@ -1,5 +1,8 @@
-// Consider adding public/private keys components
-// This is a Processinf floavoured enum
+/**
+ * Those are the virtual participants taking place in the currency exchange
+ * <p>
+ * PArticpants should be identifies with their public key.
+ */
 enum Participants {
   BOB("Bob"), 
     ALICE("Alice"), 
