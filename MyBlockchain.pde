@@ -28,13 +28,11 @@ void draw() {
 
   // Draw the visual representation of the bc on the screen
   drawBlockchain();
+  saveFrame("./out/###.tif");
 
   //Log blockchain
   println(bc.toString());
 
-  if (frameCount == 3) {
-    noLoop();
-  }
 }
 
 ArrayList<Transaction> generateRandomTransactions(int numberOfTransactions) {
