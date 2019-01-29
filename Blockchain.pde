@@ -61,7 +61,7 @@ class Blockchain {
   void addPendingTransactions(ArrayList<Transaction> transactions) {
     this.pendingTransactions.addAll(transactions);
   }
-  
+
   /**
    * Reads the transactions in the blockchain and returns the balance of a user
    */

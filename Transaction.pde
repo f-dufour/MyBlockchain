@@ -13,6 +13,6 @@ class Transaction {
   }
 
   public String toString() {
-    return this.amount + " transfered from: " + this.fromAddress + " to: " + this.toAddress;
+    return this.fromAddress + " > " + this.toAddress + " (" + this.amount + ") "; 
   }
 }

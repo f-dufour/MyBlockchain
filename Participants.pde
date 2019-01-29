@@ -4,7 +4,7 @@
  * PArticpants should be identifies with their public key.
  */
 enum Participants {
-  BOB("Bob"), 
+  ROBIN("Rob"), 
     ALICE("Alice"), 
     MINER("Miner");
 
