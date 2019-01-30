@@ -10,7 +10,7 @@ In this implementation, the proof of work is the magic number to be computed for
 
 Dependencies have to be saved within the `code` directory of the sketch.
 
-* **For SHA 256 Hashing**: commons-codec-1.11.jar. (Although it could have been possible to use `java.security.MessageDigest.getInstance("SHA-256")`, the Apache library is more convenient to use and it better handle streams conversions.
+* **For SHA 256 Hashing**: commons-codec-1.11.jar. (Although it could have been possible to use `java.security.MessageDigest.getInstance("SHA-256")`, the Apache library is more convenient to use and it better handles streams conversions.
 * **For the public/private key generation**: *Not implemented yet...*
 
 # Run and visualize
